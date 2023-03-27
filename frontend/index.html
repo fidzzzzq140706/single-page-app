@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single page app</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/JS/views/css/index.css" />
+    <link rel="stylesheet" href="static/JS/views/css/major.css">
+    <link rel="stylesheet" href="static/JS/views/css/Profil.css">
+    <link rel="stylesheet" href="static/JS/views/css/about.css">
+    <link rel="stylesheet" href="static/JS/views/css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+
+</head>
+
+<body>
+    <!-- HTML !-->
+    <section id="hero">
+        <div class="hero container">
+            <nav class="navbar">
+                <div class="logo-text">
+                    <img src="https://smkn1cianjur.sch.id/wp-content/uploads/2021/02/favicon.png" alt="logo" />
+                    <p>Smakzie</p>
+                </div>
+                <div id="topnav">
+                    <ul class="nav-links">
+                        <li>
+                            <a href="/" class="fa-solid" class="active" data-link>Home</a>
+                        </li>
+                        <li>
+                            <a href="/about" class="fa-solid " onclick="showPage3() " data-link>Tentang Kami</a>
+                        </li>
+                        <li>
+                            <a href="/major" class="fa-solid" onclick="showPage4() " data-link>Jurusan</a>
+                        </li>
+                        <li>
+                            <a href="/contact" class="fa-solid" onclick="showPage5() " data-link>Kontak</a>
+                        </li>
+
+                        <li class="icon-1 ">
+                            <a class="icon-2 ">
+                                <a href="javascript:void(0); " class="icon " onclick="myFunction()">
+                                    <i class="fa fa-bars"></i>
+                                    <script>
+                                        function myFunction() {
+                                            var x = document.getElementById("topnav");
+                                            if (x.className === "nav-links ") {
+                                                x.className += " responsive ";
+                                            } else {
+                                                x.className = "nav-links ";
+                                            }
+                                        }
+                                    </script>
+
+
+
+                                </a>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+        </div>
+        </nav>
+
+
+        <div class="about-area ">
+            <div class="area-container ">
+            </div>
+            <div class="text ">
+                <p class="white ">Welcome to</p>
+                <p class="white ">smk negeri 1 cianjur
+                </p>
+                <a href="https://ppdb.smkn1cianjur.sch.id/ " type="button " class="btn ">Selengkapnya</a>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <section id="superior">
+        <div class="superior-container">
+            <div class="head-superior">
+                <p>Kepercayaan Diri</p>
+                <img src="https://i.postimg.cc/XrBGjWjw/Analytics-team-Outline.png" alt="analisi ">
+            </div>
+        </div>
+
+        <div class="superior-container">
+            <div class="head-superior">
+                <p>PPDB</p>
+                <img src="https://i.postimg.cc/zLmL3Qv4/Winners-Isometric.png" alt="rank ">
+            </div>
+        </div>
+
+        <div class="superior-container">
+            <div class="head-superior">
+                <p>Visi dan Misi</p>
+                <img src="https://i.postimg.cc/PPxv7Z0V/Data-Arranging-Outline.png" alt="data ">
+            </div>
+        </div>
+        <div class="superior-container">
+            <div class="head-superior">
+                <p>Pengumuman</p>
+                <img src="https://i.postimg.cc/K4QgQQpg/Team-work-Outline.png" alt="team ">
+            </div>
+        </div>
+        <div class="superior-container">
+            <div class="head-superior">
+                <p>Prestasi</p>
+                <img src="https://i.postimg.cc/PPRvnJjX/Winners-Outline.png" alt="win ">
+            </div>
+        </div>
+    </section>
+
+
+    <section id="about">
+        <div class="about-container">
+            <div class="col-left">
+                <div class="about-img ">
+                    <img src="https://smkn1cianjur.sch.id/wp-content/uploads/2022/07/kepala-sekolah-smkn-1-cianjur.png " alt="img ">
+                </div>
+            </div>
+            <div class="col-right ">
+                <h1 class="section-title ">Kepala Sekolah</h1>
+                <h2>Ir.Wawan Mawardi, M.Mpd</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit praesentium, sapiente id harum minus sequi perspiciatis suscipit non hic, rerum delectus explicabo. Reprehenderit impedit velit dolor nihil sequi, unde earum. Explicabo qui,
+                    consequuntur quaerat odio fugiat, cumque corporis molestiae hic, aut totam voluptatem. Sint adipisci explicabo minus, consectetur eaque numquam.</p>
+
+            </div>
+        </div>
+    </section>
+
+
+    <div id="app"></div>
+
+
+    <footer>
+        <section class="footer-container ">
+            <div class="Tentang ">
+                <h3>Tentang Kami</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias iste repudiandae maiores beatae illum consequuntur ratione velit commodi? Blanditiis officia vitae porro consequatur, dolorum iure placeat modi molestias culpa sed.</p>
+                <img src="https://cdn-icons-png.flaticon.com/512/747/747393.png?w=740&t=st=1679672133~exp=1679672733~hmac=f9f0bea8872f884a18b84ae727b4b78d981850c54c0a78b79e43d512d2099a6f " alt="ig " href="https://www.instagram.com/smakzie/ ">
+                <img src="https://cdn-icons-png.flaticon.com/512/1216/1216915.png?w=740&t=st=1679672326~exp=1679672926~hmac=249d903a029d0bb50fa526435bcd20813694c229738a2d19898b855796ff2c96 " alt="twitter ">
+                <img src="https://img.freepik.com/free-icon/facebook_318-134205.jpg?size=338&ext=jpg&ga=GA1.2.569042642.1663680795&semt=sph " alt="fb ">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25377.png?w=740&t=st=1679672457~exp=1679673057~hmac=16e6e89062d5aa3fc2d7753ac2160819e302d2890c2b057b4b3349d2447e564a " alt="telephone ">
+            </div>
+
+            <div class="profil ">
+                <h3>Profil</h3>
+                <ul>
+                    <li>
+                        <a href="/profil ">Profil</a>
+                    </li>
+                    <li>
+                        <a href="/about ">Tentang Kami</a>
+                    </li>
+                    <li>
+                        <a href="/major ">Jurusan</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contact ">
+                <h3>Contact</h3>
+                <ul>
+                    <li>
+                        Alamat: Jl. Siliwangi No.41, Sawah Gede, Kec. Cianjur, Kabupaten Cianjur, Jawa Barat 43212
+                    </li>
+                    <li>
+                        Jam: Tutup ⋅ Buka Jum pukul 05.30
+                    </li>
+                    <li>
+                        Telepon: (0263) 261265 Provinsi: Jawa Barat
+
+                    </li>
+                    <li>
+
+                        <a href="https://goo.gl/maps/CZDVzhuEeo5Bgvrf7 "><i class="fa-solid fa-location-dot "></i> Get Direction</a>
+
+
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="contact " class="copyright ">Copyright &copy; 2023 SMKN 1 CIANJUR</section>
+    </footer>
+
+    <script type="module " src="/static/JS/index.js "></script>
+    <script>
+        function showPage2() {
+            document.querySelector('.navbar,.superior-container,#about').style.display = "none ";
+            document.querySelector('footer').style.visibility = "visible ";
+            document.querySelector('.navbar li a.active').classList.remove(
+                'active');
+            document.querySelector('.navbar li:nth-child(1) a').classList.add('active');
+        }
+
+        function showPage3() {
+            document.querySelector('.navbar,.superior-container,#about').style.display = "none ";
+            document.querySelector('.footer').style.visibility = "visible ";
+            document.querySelector('.navbar li a.active').classList.remove(
+                'active');
+            document.querySelector('.navbar li:nth-child(1) a').classList.add('active');
+        }
+
+        function showPage4() {
+            document.querySelector('.navbar,.superior-container,#about').style.display = "none ";
+            document.querySelector('.contact').style.visibility = "visible ";
+            document.querySelector('.navbar li a.active').classList.remove(
+                'active');
+            document.querySelector('.navbar li:nth-child(1) a').classList.add('active');
+        }
+
+        function showPage5() {
+            document.querySelector(',.superior-container,#about').style.display = "none ";
+            document.querySelector('.contact, .navbar').style.visibility = "visible ";
+            document.querySelector('.navbar li a.active').classList.remove(
+                'active');
+            document.querySelector('.navbar li:nth-child(1) a').classList.add('active');
+        }
+    </script>
+
+</body>
+
+</html>
